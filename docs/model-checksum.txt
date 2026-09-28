@@ -1,0 +1,20 @@
+MUBSIR — ASL.pt Model Integrity Record
+=======================================
+
+Original model (reference, untouched):
+  C:\HEDIA\project0505\project\asl_project\recognition\static\recognition\models\ASL.pt
+
+Copied model (used by the new AI service):
+  C:\HEDIA\project0505\project\mubsir\ai-service\models\ASL.pt
+
+Algorithm: SHA-256
+
+Original SHA-256: 0ad2d4ee9fdc47e521d66a1e21b7228114adf525f4a7373d7ea58c64f7f9c6ed
+Copied   SHA-256: 0ad2d4ee9fdc47e521d66a1e21b7228114adf525f4a7373d7ea58c64f7f9c6ed
+
+Result: IDENTICAL — the model weights were copied without modification.
+Verified: 2026-09-28 (during MUBSIR rebuild, Phase 9).
+
+The model was not retrained, re-exported, or otherwise altered in producing
+this copy. It is the same YOLOv8n Arabic Sign Language alphabet detection
+checkpoint used by the original Django prototype.

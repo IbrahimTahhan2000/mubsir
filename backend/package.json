@@ -1,0 +1,22 @@
+{
+  "name": "mubsir-backend",
+  "version": "1.0.0",
+  "description": "MUBSIR Node.js API — session state, recognition logic, and communication with the Python AI service.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "helmet": "^8.0.0",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.1",
+    "express-rate-limit": "^7.5.0",
+    "axios": "^1.7.9",
+    "pino": "^9.6.0"
+  }
+}
