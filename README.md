@@ -1,4 +1,4 @@
-# MUBSIR — مبصر
+﻿# MUBSIR — مبصر
 
 ### IBRAHIM TAHHAN
 
@@ -19,6 +19,14 @@ MUBSIR was rebuilt from an earlier **Django/Python prototype** into a modular ar
 **React → Node.js → Python/FastAPI → ASL.pt**
 
 The original Arabic Sign Language recognition model was preserved without retraining or modification.
+
+---
+
+## Demo
+
+Watch the MUBSIR demo video:
+
+[▶ Watch Demo Video on Google Drive](https://drive.google.com/file/d/1Pm2QY-JI4Dj12paBy11sb-UwjTvtgBbw/view?usp=drive_link)
 
 ---
 
@@ -481,3 +489,5 @@ The project focuses on building a maintainable application architecture around a
 ### IBRAHIM TAHHAN
 
 **FULL STACK DEVELOPER | REACT.JS | NODE.JS**
+
+
