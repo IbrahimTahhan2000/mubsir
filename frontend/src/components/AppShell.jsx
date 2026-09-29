@@ -17,8 +17,6 @@ export function AppShell({ children }) {
           <NavLink to="/" end>الرئيسية</NavLink>
           <NavLink to="/pilgrim">مسار السائل</NavLink>
           <NavLink to="/mufti">مسار المفتي</NavLink>
-          <NavLink to="/surah/al-fatiha">الفاتحة</NavLink>
-          <NavLink to="/surah/al-kawthar">الكوثر</NavLink>
         </nav>
       </header>
       <main className="content">{children}</main>

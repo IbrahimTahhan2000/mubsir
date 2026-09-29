@@ -43,24 +43,6 @@ export function HomePage() {
             <div className="flow-chips"><span>سؤال</span><i className="fas fa-arrow-left" /><span>إجابة</span><i className="fas fa-arrow-left" /><span>حركات</span></div>
             <Link to="/mufti" className="btn"><i className="fas fa-arrow-left" /> ابدأ مسار المفتي</Link>
           </article>
-
-          <article className="path-card">
-            <span className="path-number">03</span>
-            <div className="path-icon"><i className="fas fa-book-quran" /></div>
-            <p className="path-label">تدريب على التهجئة الإشارية</p>
-            <h3>سورة الفاتحة</h3>
-            <p>تهجئة آيات سورة الفاتحة حرفاً بحرف أمام الكاميرا.</p>
-            <Link to="/surah/al-fatiha" className="btn"><i className="fas fa-book-quran" /> ابدأ الفاتحة</Link>
-          </article>
-
-          <article className="path-card">
-            <span className="path-number">04</span>
-            <div className="path-icon"><i className="fas fa-book-quran" /></div>
-            <p className="path-label">تدريب على التهجئة الإشارية</p>
-            <h3>سورة الكوثر</h3>
-            <p>تهجئة آيات سورة الكوثر حرفاً بحرف أمام الكاميرا.</p>
-            <Link to="/surah/al-kawthar" className="btn"><i className="fas fa-book-quran" /> ابدأ الكوثر</Link>
-          </article>
         </div>
       </section>
     </>

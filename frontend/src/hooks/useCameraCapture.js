@@ -15,6 +15,17 @@ export function useCameraCapture(onFrame, { enabled = true } = {}) {
   const [permissionState, setPermissionState] = useState("idle"); // idle | requesting | granted | denied | error
   const [errorMessage, setErrorMessage] = useState("");
 
+  // Always holds the latest onFrame callback. Updated on every render (not
+  // inside the capture effect below), so the running interval can call
+  // through it without the capture effect needing to depend on onFrame —
+  // which would otherwise tear down and restart getUserMedia/the interval
+  // every time the caller's callback identity changes (e.g. when a page
+  // like SurahPage rebuilds its callback after `surahId` changes without
+  // actually remounting, since React Router reuses the same route element
+  // for different dynamic-segment values).
+  const onFrameRef = useRef(onFrame);
+  onFrameRef.current = onFrame;
+
   const stop = useCallback(() => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
@@ -62,7 +73,7 @@ export function useCameraCapture(onFrame, { enabled = true } = {}) {
           ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
           canvas.toBlob(
             (blob) => {
-              if (blob) onFrame(blob);
+              if (blob) onFrameRef.current(blob);
             },
             "image/jpeg",
             0.8
